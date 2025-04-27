@@ -1,0 +1,426 @@
+/* - - - - - - - - - - - - - - - - - - - - - - >>> Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background: white;
+}
+a {
+    text-decoration: none;
+}
+.container-fluid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+}
+.img-fluid{
+        width: 100%;
+        height: auto;
+}
+.img-fluid-bt{
+        width: 100%;
+        max-width: 50px;
+        height: auto;
+}
+
+/* - - - - - - - - - - FIN Normalize */
+
+/* Fonts */
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  /* FIN fonts */
+
+/* BT CTA */
+.bt-CTA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width:95%;
+    background: #F8D666;
+    color: #762D16;
+    border: 2px #762D16 solid;
+    font-weight: 700;
+    font-size: clamp(1.5em, 2vw, 2.5em);
+    border-radius: 10px;
+    padding: 3%;
+    cursor: pointer;
+}
+.bt-CTA:hover{
+    background: #faea08;
+    color: #571804;
+    border: 2px #571804 solid;
+    }
+/* BTA CTA fin  */
+
+
+  /* Header Navbar*/
+  header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: #220a11cb 2px 2px 8px;
+  }
+  .navbar{
+    z-index: 999;
+    /* position: fixed; */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    }
+    .logo-Header{
+        width: 200px;
+    }
+    .sello-AC {
+        font-weight: 300;
+        /* font-size: 0.8em; */
+        font-size: clamp(0.6em, 2vw, 0.8em);
+        letter-spacing: 0.5em;
+        color: #313131;
+        border: 1px solid #c0c0c0;
+        padding: 4px 8px;
+
+    }
+/* Main Hero */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* HERO - - - - -  */
+.hero{
+    background: linear-gradient(130deg, rgba(249, 249, 249, 1) 20%, rgba(245, 247, 22, 1) 60%, rgba(232, 50, 69, 1) 80%, rgba(191, 13, 31, 1) 100%);;
+    }
+    .hero-2col {
+        padding: 5%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        gap: 6%;
+
+        }
+        .CTA {
+            min-width: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+            .CTA-txt1 {
+                max-height: 5.2em;
+                color: #762D16;
+                font-size: clamp(1.3em, 2vw, 2em);
+            }
+            .CTA-txt1 h1 {
+                line-height: 1em;
+                font-weight: 400;
+            }
+            .CTA-txt1 h1 span {
+                font-weight: 700;
+            }
+            .CTA-desc {
+                max-width: 650px;
+                color: #111111;
+                font-weight: 300;
+                font-size: clamp(1.2em, 2vw, 2.5em);
+            }
+
+/* SERVICIOS - - - -  */
+.servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%
+    }
+    .servicio-cont {
+        background: #FCFCDD;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 6% 3%;
+        margin: 5% 0;
+        border: 5px dotted #762D16 ;
+        border-radius: 30px;
+        }
+        .servicio-titulo {
+            width: 100%;
+            color: #762D16;
+            font-size: clamp(1.1em, 2vw, 2em);
+            margin-bottom: 4%;
+            }
+            .servicio-titulo h2 {
+                text-align: center;
+                line-height: 1em;
+                font-weight: 400;
+            }
+            .servicio-titulo h2 span {
+                font-weight: 700;
+            }
+            .servicio-desc {
+                width: 100%;
+                color: #111111;
+                font-weight: 300;
+                font-size: clamp(1em, 2vw, 2em);
+                }
+                .servicio-desc span{
+                    font-weight: 700;
+                    }
+            .servicio-items {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 3%;
+                }
+                .serv-item {
+                    display: flex;
+                    align-items: center;
+                    padding: 2% ;
+                    gap: 10px;
+                    border-bottom: 2px dotted #ff800080 ;
+                    }
+                    .img-fluid-item {
+                        width: 100%;
+                        max-width: 100px;
+                    }
+                    .serv-item p {
+                        color: #111111;
+                        font-weight: 200;
+                        font-size: clamp(1em, 2vw, 2em);
+                        }
+                .bt-cont-servicios {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    text-align: center;
+                    padding: 6% 0 0 0;
+                    }
+                    .bt-CTA-servicios{
+                        width: 480px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
+                        background: #F8D666;
+                        color: #762D16;
+                        border: 2px #762D16 solid;
+                        font-weight: 700;
+                        font-size: clamp(1.5em, 2vw, 2.5em);
+                        border-radius: 10px;
+                        padding: 3%;
+                        cursor: pointer;
+                    }
+                    .bt-CTA-servicios:hover{
+                        background: #faea08;
+                        color: #571804;
+                        border: 2px #571804 solid;
+                        }
+
+.historieta {
+    background: #FCFCDD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3%;
+    border-top: 5px dotted #762D16 ;
+    }
+    .historieta-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        }
+    .logo-historieta{
+        max-width: 460px;
+    }
+    .historieta-cuadros{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    /* .histo-cuadro {
+        overflow: hidden;
+        } */
+        .histo-cuadro img{
+            /* filter: brightness(0.9); */
+            width: 100%;
+            max-width: 650px;
+            transition: 0.7s;
+            object-fit: cover;
+            }
+            .histo-cuadro img:hover{
+                filter: brightness(1.3);
+                transition: 0.4s;
+                transform: scale(1.05);
+                }
+    .historieta-pie{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        }
+        .historieta-pie p{
+        color: #111111;
+        font-weight: 200;
+        font-size: clamp(1.2em, 2vw, 1.7em);
+        }
+            .historieta-pie p span{
+            font-weight: 600;
+            line-height: 1.5em;
+            }
+.footer-pc {
+    background: #762D16;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1% 2%;
+    gap:10px;
+    }
+    .logo-footer{
+        max-width: 100px;
+    }
+    .footer-email a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px
+        }
+        .footer-email p{
+            color: #ffffff;
+            font-weight: 200;
+            font-size: clamp(0.4em 2vw, 1.1em);
+            }
+
+        /* MEDIA QUERyS  */
+        @media (max-width: 780px) {
+            .logo-Header{
+                width: 150px;
+            }
+            .hero-2col{
+               flex-direction: column;
+               gap: 10px;
+               padding: 30px 0;
+            }
+            .CTA {
+                align-items: center;
+                width: 100%;
+            }
+            .CTA-txt1 {
+                text-align: center;
+                
+            }
+            .CTA-desc{
+                text-align: center;
+            }
+            .bt-CTA{
+                width:300px;
+                gap: 20px;
+            }
+            .img-fluid-bt{
+                width: 100%;
+                max-width: 30px;
+                height: auto;
+            }
+            .img-personaje {
+                max-width: 450px;
+                margin: 1% 4%;
+            }
+            /* servicio */
+            .servicio-cont {
+                padding: 10% 4%;
+                border: 3px dotted #762D16 ;
+                border-radius: 20px;
+                }
+                .serv-item p {
+                    font-weight: 300;
+                    }
+                .img-fluid-item {
+                    max-width: 60px;
+                }
+                .bt-cont-servicios {
+                    padding: 8% 0 0 0;
+                    }
+                    .bt-CTA-servicios{
+                        width:300px;
+                        gap: 20px;
+                    }
+            .historieta {
+                border-top: 3px dotted #762D16 ;
+                }
+                .logo-historieta{
+                    max-width: 320px;
+                }
+            }
+            @media (max-width: 450px) {
+            .footer-pc {
+                flex-direction: column;
+                gap: 0;
+                }
+                .logo-footer{
+                    max-width: 180px;
+                }
+
+            }

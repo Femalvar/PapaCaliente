@@ -215,11 +215,11 @@ main {
             .servicio-desc {
                 width: 100%;
                 color: #111111;
-                font-weight: 300;
+                font-weight: 200;
                 font-size: clamp(1em, 2vw, 2em);
                 }
                 .servicio-desc span{
-                    font-weight: 700;
+                    font-weight: 600;
                     }
             .servicio-items {
                 display: flex;
@@ -272,6 +272,122 @@ main {
                         border: 2px #571804 solid;
                         }
 
+/* trabajos - - - -  */
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    margin: 30px;
+    }
+    .trabajos-header {
+        background: #D74512;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 3% 0 4%;
+        width: 100%;
+        height: 200px;
+        border-radius: 30px;
+        }
+        .trabajos-titulos {
+            display: flex;
+            width: 100%;
+            color: #ffffff;
+            font-size: clamp(1.1em, 2vw, 2em);
+            margin-bottom: 4%;
+            }
+            .trabajos-titulos h2 {
+                line-height: 1.2em;
+                font-weight: 400;
+            }
+            .trabajos-titulos h2 span {
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+            .img-papaEbullicion {
+                min-width: 260px;
+            }
+    .trabajos-desc {
+        padding: 50px;
+        width: 100%;
+        color: #111111;
+        font-weight: 200;
+        font-size: clamp(1em, 2vw, 2em);
+        }
+        .trabajos-desc span{
+            font-weight: 600;
+            }
+    .trabajos-cards {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
+        }
+        .card-cont {
+            background: #FCFCDD;
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items: center;
+            width: 100%;
+            max-width: 370px;
+            /* height: 400px; */
+            overflow: hidden;
+            border: #C2C2C2 1px solid;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            }
+            .card-cont:hover{
+                border: #929292 1px solid;
+                transition-duration: 0.5s;
+                filter:contrast(1.2);
+                /* filter: brightness(1.1); */
+            }
+            .card-marca {
+                height: 80px;
+                overflow: hidden;
+            }
+            .card-thumb {
+                height: 240px;
+                overflow: hidden;
+            }
+            .card-marca img{
+                min-width:fit-content;
+            }
+            .card-thumb img{
+                min-width:fit-content;
+                transition: 1.2s;
+                object-fit: cover;
+                }
+                .card-thumb img:hover{
+                    filter: brightness(1.2);
+                    transition: 0.6s;
+                    transform: scale(1.05);
+                    }
+
+
+            .card-desc {
+                padding: 10px 20px 20px 20px;
+                width: 100%;
+                color: #111111;
+                font-weight: 200;
+                font-size: clamp(1em, 2vw, 1.3em);
+                }
+                .card-desc span{
+                    line-height: 2em;
+                    font-weight: 600;
+                    }
+            .linkwork{
+                text-decoration: none;
+                color: inherit !important;
+            }
+
+/* Historieta - - - -  */
 .historieta {
     background: #FCFCDD;
     display: flex;
@@ -393,20 +509,40 @@ main {
                 padding: 10% 4%;
                 border: 3px dotted #762D16 ;
                 border-radius: 20px;
+            }
+            .serv-item p {
+                font-weight: 300;
+            }
+            .img-fluid-item {
+                max-width: 60px;
+            }
+            .bt-cont-servicios {
+                padding: 8% 0 0 0;
+            }
+            .bt-CTA-servicios{
+                width:300px;
+                gap: 20px;
+            }
+            /* TRabajos */
+            .trabajos-header {
+                padding: 10px 1% 0 5%;
+                width: 100%;
+                height: 110px;
+                border-radius: 20px;
                 }
-                .serv-item p {
-                    font-weight: 300;
-                    }
-                .img-fluid-item {
-                    max-width: 60px;
+                .trabajos-titulos h2 span {
+                    font-size: 1.2em;
+                    font-weight: 700;
                 }
-                .bt-cont-servicios {
-                    padding: 8% 0 0 0;
-                    }
-                    .bt-CTA-servicios{
-                        width:300px;
-                        gap: 20px;
-                    }
+                .trabajos-desc {
+                    padding: 40px 15px 30px 15px;
+                }
+            .img-papaEbullicion {
+                margin-top: 30px;
+                min-width: 120px;
+            }
+
+
             .historieta {
                 border-top: 3px dotted #762D16 ;
                 }

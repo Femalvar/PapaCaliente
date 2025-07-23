@@ -353,7 +353,7 @@ main {
                 overflow: hidden;
             }
             .card-thumb {
-                height: 240px;
+                height: 200px;
                 overflow: hidden;
             }
             .card-marca img{
@@ -369,17 +369,18 @@ main {
                     transition: 0.6s;
                     transform: scale(1.05);
                     }
-
-
             .card-desc {
-                padding: 10px 20px 20px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                padding: 20px;
                 width: 100%;
                 color: #111111;
+                font-size: clamp(0.9em, 2vw, 1.1em);
                 font-weight: 200;
-                font-size: clamp(1em, 2vw, 1.3em);
+                line-height: 1.3em;
                 }
                 .card-desc span{
-                    line-height: 2em;
                     font-weight: 600;
                     }
             .linkwork{
